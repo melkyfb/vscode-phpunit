@@ -33,6 +33,12 @@ export function activate(context: vscode.ExtensionContext) {
   );
 
   context.subscriptions.push(
+    vscode.commands.registerCommand("phpunit.TestNoArgs", () => {
+      PHPUnitTestRunner.run("no-args");
+    })
+  );
+
+  context.subscriptions.push(
     vscode.commands.registerCommand("phpunit.RerunLastTest", () => {
       PHPUnitTestRunner.run("rerun-last-test");
     })

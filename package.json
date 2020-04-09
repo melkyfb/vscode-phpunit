@@ -31,6 +31,7 @@
     "onCommand:phpunit.Test",
     "onCommand:phpunit.TestNearest",
     "onCommand:phpunit.TestDirectory",
+    "onCommand:phpunit.TestNoArgs",
     "onCommand:phpunit.RerunLastTest",
     "onCommand:phpunit.TestingStop"
   ],
@@ -48,6 +49,10 @@
       {
         "command": "phpunit.TestDirectory",
         "title": "PHPUnit Test Directory"
+      },
+      {
+        "command": "phpunit.TestNoArgs",
+        "title": "PHPUnit Test without args"
       },
       {
         "command": "phpunit.RerunLastTest",
